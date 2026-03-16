@@ -35,6 +35,22 @@ const polarToCartesian = (centerX, centerY, radius, angleInDegrees) => {
 
 export const SVGUtil = {
     /**
+     * 极坐标转笛卡尔坐标
+     * @param {number} centerX - 中心点 X 坐标
+     * @param {number} centerY - 中心点 Y 坐标
+     * @param {number} radius - 半径
+     * @param {number} angleInDegrees - 角度（度）
+     * @returns {{x: number, y: number}} 笛卡尔坐标
+     */
+    polarToCartesian: (centerX, centerY, radius, angleInDegrees) => {
+        const angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
+        return {
+            x: centerX + (radius * Math.cos(angleInRadians)),
+            y: centerY + (radius * Math.sin(angleInRadians))
+        };
+    },
+
+    /**
      * 安全数值转换
      * @param {*} numberVal - 输入值
      * @param {number} numberDefault - 默认值
@@ -60,12 +76,12 @@ export const SVGUtil = {
             x = Number(x || 0); y = Number(y || 0);
             radius = Number(radius || 0); width = Number(width || 0);
             const innerRing = {
-                start: polarToCartesian(x, y, radius, 359.99),
-                end: polarToCartesian(x, y, radius, 0)
+                start: SVGUtil.polarToCartesian(x, y, radius, 359.99),
+                end: SVGUtil.polarToCartesian(x, y, radius, 0)
             };
             const outerRing = {
-                start: polarToCartesian(x, y, radius + width, 359.99),
-                end: polarToCartesian(x, y, radius + width, 0)
+                start: SVGUtil.polarToCartesian(x, y, radius + width, 359.99),
+                end: SVGUtil.polarToCartesian(x, y, radius + width, 0)
             };
             return [
                 "M", innerRing.start.x, innerRing.start.y,
@@ -92,31 +108,31 @@ export const SVGUtil = {
             startAngle = Number(startAngle); endAngle = Number(endAngle); width = Number(width);
 
             if (startAngle === endAngle) {
-                const start = polarToCartesian(x, y, radius, startAngle);
-                const end = polarToCartesian(x, y, radius + width, startAngle);
+                const start = SVGUtil.polarToCartesian(x, y, radius, startAngle);
+                const end = SVGUtil.polarToCartesian(x, y, radius + width, startAngle);
                 return ["M", start.x, start.y, "L", end.x, end.y].join(" ");
             }
 
             if (width === 1) {
-                const start = polarToCartesian(x, y, radius, startAngle);
-                const end = polarToCartesian(x, y, radius, endAngle);
+                const start = SVGUtil.polarToCartesian(x, y, radius, startAngle);
+                const end = SVGUtil.polarToCartesian(x, y, radius, endAngle);
                 const arcSweep = (startAngle < endAngle ? endAngle - startAngle : endAngle - startAngle + 360) <= 180 ? "0" : "1";
                 return ["M", start.x, start.y, "A", radius, radius, 0, arcSweep, 1, end.x, end.y].join(" ");
             }
 
             endAngle = endAngle - (arrowEnd.length < 0 ? 0 : arrowEnd.length);
             startAngle = startAngle + (arrowStart.length < 0 ? 0 : arrowStart.length);
-            const start = polarToCartesian(x, y, radius, endAngle);
-            const end = polarToCartesian(x, y, radius, startAngle);
-            const arrow_start_1 = polarToCartesian(x, y, radius - arrowStart.width, startAngle + arrowStart.angle);
-            const arrow_start_2 = polarToCartesian(x, y, radius + (width / 2), startAngle - arrowStart.length);
-            const arrow_start_3 = polarToCartesian(x, y, radius + width + arrowStart.width, startAngle + arrowStart.angle);
-            const arrow_start_4 = polarToCartesian(x, y, radius + width, startAngle);
-            const arrow_end_1 = polarToCartesian(x, y, radius + width + arrowEnd.width, endAngle - arrowEnd.angle);
-            const arrow_end_2 = polarToCartesian(x, y, radius + (width / 2), endAngle + arrowEnd.length);
-            const arrow_end_3 = polarToCartesian(x, y, radius - arrowEnd.width, endAngle - arrowEnd.angle);
-            const arrow_end_4 = polarToCartesian(x, y, radius, endAngle);
-            const start2 = polarToCartesian(x, y, radius + width, endAngle);
+            const start = SVGUtil.polarToCartesian(x, y, radius, endAngle);
+            const end = SVGUtil.polarToCartesian(x, y, radius, startAngle);
+            const arrow_start_1 = SVGUtil.polarToCartesian(x, y, radius - arrowStart.width, startAngle + arrowStart.angle);
+            const arrow_start_2 = SVGUtil.polarToCartesian(x, y, radius + (width / 2), startAngle - arrowStart.length);
+            const arrow_start_3 = SVGUtil.polarToCartesian(x, y, radius + width + arrowStart.width, startAngle + arrowStart.angle);
+            const arrow_start_4 = SVGUtil.polarToCartesian(x, y, radius + width, startAngle);
+            const arrow_end_1 = SVGUtil.polarToCartesian(x, y, radius + width + arrowEnd.width, endAngle - arrowEnd.angle);
+            const arrow_end_2 = SVGUtil.polarToCartesian(x, y, radius + (width / 2), endAngle + arrowEnd.length);
+            const arrow_end_3 = SVGUtil.polarToCartesian(x, y, radius - arrowEnd.width, endAngle - arrowEnd.angle);
+            const arrow_end_4 = SVGUtil.polarToCartesian(x, y, radius, endAngle);
+            const start2 = SVGUtil.polarToCartesian(x, y, radius + width, endAngle);
             const arcSweep = (startAngle < endAngle ? endAngle - startAngle : endAngle - startAngle + 360) <= 180 ? "0" : "1";
 
             return ["M", start.x, start.y, "A", radius, radius, 0, arcSweep, 0, end.x, end.y, "L", arrow_start_1.x, arrow_start_1.y, "L", arrow_start_2.x, arrow_start_2.y, "L", arrow_start_3.x, arrow_start_3.y, "L", arrow_start_4.x, arrow_start_4.y, "A", radius + width, radius + width, 0, arcSweep, 1, start2.x, start2.y, "L", arrow_end_1.x, arrow_end_1.y, "L", arrow_end_2.x, arrow_end_2.y, "L", arrow_end_3.x, arrow_end_3.y, "L", arrow_end_4.x, arrow_end_4.y, "z"].join(" ");

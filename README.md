@@ -1,6 +1,6 @@
 # PlasimDraw
 
-质粒图谱可视化工具，基于 React + Vite 构建。
+质粒图谱可视化工具，根据[angularplasmid](https://angularplasmid.vixis.com/)修改，基于 React + Vite 构建。
 
 ## 功能特性
 
@@ -127,6 +127,40 @@ import {
 } from './lib';
 ```
 
+## 例图
+
+### pUC19
+
+![pUC19](examples\pUC19.png)
+
+
+### HSP70
+
+![pUC19](examples\HSP70.png)
+
+### pUC19
+
+![pUC19](examples\pUC19.png)
+
+### pBCA-RLuc
+
+![pUC19](examples\pBCA-RLuc.png)
+
+### pBR322
+
+![pUC19](examples\pBR322.png)
+
+### pGEX
+
+![pUC19](examples\pGEX.png)
+### pPMA43C
+
+![pUC19](examples\pPMA43C.png)
+
+
+
+
+
 ## 项目结构
 
 ```
@@ -148,7 +182,10 @@ plasimdraw/
 ├── examples/                 # 示例数据
 │   ├── pUC19.json
 │   ├── pBR322.json
-│   └── HSP70_standard.json
+│   └── HSP70.json
+│   ├── pBCA-RLuc.json
+│   └── pGEX.json
+│   └── pUC19.json
 ├── package.json
 └── vite.config.js
 ```
