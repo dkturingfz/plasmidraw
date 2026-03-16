@@ -1,0 +1,43 @@
+{
+    "name": "pBR322",
+    "sequencelength": 4361,
+    "size": 375,
+    "radius": 125,
+    "width": 8,
+    "trackStyle": { "fill": "#669" },
+    "features": [
+        {
+            "id": "ampR",
+            "label": "AmpR",
+            "start": 3293, "end": 4153,
+            "vadjust": -10,
+            "labelVadjust": -30,
+            "arrowstartlength": 10, "arrowstartwidth": 5, "arrowstartangle": 3,
+            "style": { "fill": "#e05c5c" },
+            "description": "Ampicillin Resistance",
+            "details": "氨苄青霉素抗性基因"
+        },
+        {
+            "id": "tetR",
+            "label": "TetR",
+            "start": 86, "end": 1276,
+            "vadjust": -10,
+            "labelVadjust": -30,
+            "arrowstartlength": 10, "arrowstartwidth": 5, "arrowstartangle": 3,
+            "style": { "fill": "#5b8dd9" },
+            "description": "Tetracycline Resistance",
+            "details": "四环素抗性基因"
+        },
+        {
+            "id": "ori",
+            "label": "ori",
+            "start": 2208, "end": 2848,
+            "vadjust": -10,
+            "labelVadjust": -25,
+            "arrowstartlength": 10, "arrowstartwidth": 5, "arrowstartangle": 3,
+            "style": { "fill": "#74c476" },
+            "description": "Origin of Replication",
+            "details": "复制起始位点"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "pUC19",
+    "sequencelength": 2686,
+    "size": 375,
+    "radius": 125,
+    "width": 8,
+    "trackStyle": { "fill": "#c60" },
+    "features": [
+        {
+            "id": "lacZ",
+            "label": "lacZ",
+            "start": 80, "end": 454,
+            "vadjust": -10,
+            "labelVadjust": -30,
+            "arrowstartlength": 10, "arrowstartwidth": 5, "arrowstartangle": 3,
+            "style": {},
+            "description": "lacZ alpha fragment",
+            "details": "编码 β-半乳糖苷酶 α 片段，用于蓝白筛选"
+        },
+        {
+            "id": "polylinker",
+            "label": "Polylinker",
+            "start": 396, "end": 454,
+            "vadjust": -10,
+            "labelVadjust": -35,
+            "style": { "fill": "#00f" },
+            "labelStyle": { "fill": "#00f" },
+            "description": "Multiple Cloning Site",
+            "details": "多克隆位点，含多个限制酶切位点"
+        },
+        {
+            "id": "ori",
+            "label": "ori",
+            "start": 800, "end": 1400,
+            "vadjust": -10,
+            "labelVadjust": -25,
+            "arrowstartlength": 10, "arrowstartwidth": 5, "arrowstartangle": 3,
+            "style": {},
+            "description": "pMB1 Origin of Replication",
+            "details": "复制起始位点，控制质粒拷贝数"
+        },
+        {
+            "id": "amp",
+            "label": "amp",
+            "start": 1700, "end": 2500,
+            "vadjust": -10,
+            "labelVadjust": -30,
+            "arrowstartlength": 10, "arrowstartwidth": 5, "arrowstartangle": 3,
+            "style": {},
+            "description": "Ampicillin Resistance",
+            "details": "氨苄青霉素抗性基因，用于筛选转化子"
+        }
+    ]
+}

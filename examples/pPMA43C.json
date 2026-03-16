@@ -1,0 +1,123 @@
+{
+  "name": "pPMA43C",
+  "sequencelength": 1000,
+  "size": 375,
+  "tracks": [
+    {
+      "trackStyle": "fill:#ccc;stroke:#999",
+      "width": 5,
+      "radius": 125,
+      "labels": [
+        { "text": "pPMA43C", "labelStyle": "font-size:20px;font-weight:700;fill:#666" },
+        { "text": "1,000 bp", "labelStyle": "font-size:12px;font-weight:400;fill:#999", "vadjust": 18 }
+      ],
+      "scales": [
+        { "interval": 10, "style": "stroke:#999", "vadjust": 8 },
+        { "interval": 50, "showlabels": 1, "style": "stroke:#333;stroke-width:2px", "ticksize": 5, "vadjust": 8, "labelstyle": "font-size:9px;fill:#999;font-weight:300", "labelvadjust": 15 }
+      ],
+        "markers": [
+        {
+            "id": "pstI", "start": 200, "end": 330,
+            "markerStyle": "stroke:#000;fill:#ff0",
+            "arrowstartlength": 10, "arrowstartwidth": 5,
+            "wadjust": 10, "vadjust": -5,
+            "description": "PstI", "details": "限制性内切酶 PstI 切割位点，200-330 bp",
+            "labels": [
+            { "text": "PstI", "vadjust": 18, "hadjust": 2, "valign": "outer",
+                "showline": true, "linevadjust": -8,
+                "labelStyle": "font-size:14px;fill:#990" },
+            { "type": "path", "text": "200-330", "vadjust": 4,
+                "labelStyle": "font-size:8px;fill:#990" }
+            ]
+        },
+        {
+            "id": "acolIII", "start": 450, "end": 620,
+            "markerStyle": "stroke:#000;fill:#f00",
+            "arrowendlength": 10, "arrowendwidth": 5,
+            "wadjust": 10, "vadjust": -5,
+            "description": "AcolIII", "details": "限制性内切酶 AcolIII 切割位点，450-620 bp",
+            "labels": [
+            { "text": "AcolIII", "vadjust": 18, "hadjust": 2, "valign": "outer",
+                "showline": true, "linevadjust": -8,
+                "labelStyle": "font-size:14px;fill:#c00" },
+            { "type": "path", "text": "400-620", "vadjust": 4,
+                "labelStyle": "font-size:8px;fill:#fff" }
+            ]
+        },
+        {
+            "id": "ecoRI", "start": 630, "end": 720,
+            "markerStyle": "stroke:#000;fill:#f00",
+            "arrowendlength": 10, "arrowendwidth": 5,
+            "wadjust": 10, "vadjust": -5,
+            "description": "EcoRI", "details": "限制性内切酶 EcoRI 切割位点，630-720 bp",
+            "labels": [
+            { "text": "EcoRI", "vadjust": 18, "hadjust": -2, "valign": "outer",
+                "showline": true, "linevadjust": -8,
+                "labelStyle": "font-size:14px;fill:#c00" },
+            { "type": "path", "text": "630-720", "vadjust": 4,
+                "labelStyle": "font-size:8px;fill:#fff" }
+            ]
+        },
+        {
+            "id": "scaI", "start": 760, "end": 880,
+            "markerStyle": "stroke:#000;fill:#0f0",
+            "arrowendlength": 10, "arrowendwidth": 5,
+            "wadjust": 10, "vadjust": -5,
+            "description": "ScaI", "details": "限制性内切酶 ScaI 切割位点，760-880 bp",
+            "labels": [
+            { "text": "ScaI", "vadjust": 18, "valign": "outer",
+                "showline": true, "linevadjust": -8,
+                "labelStyle": "font-size:14px;fill:#0c0" },
+            { "type": "path", "text": "760-880", "vadjust": 4,
+                "labelStyle": "font-size:8px;fill:#000" }
+            ]
+        },
+        {
+            "id": "taqI", "start": 980, "end": 150,
+            "markerStyle": "stroke:#000;fill:#00f",
+            "wadjust": 10, "vadjust": -5,
+            "description": "TaqI", "details": "限制性内切酶 TaqI 切割位点，980-150 bp",
+            "labels": [
+            { "text": "TaqI", "vadjust": 18, "hadjust": 2, "valign": "outer",
+                "showline": true, "linevadjust": -8,
+                "labelStyle": "font-size:14px;fill:#00c" },
+            { "type": "path", "text": "920-150", "vadjust": 4,
+                "labelStyle": "font-size:8px;fill:#fff" }
+            ]
+        },
+        {
+            "id": "a35", "start": 420, "end": 430,
+            "markerStyle": "stroke:#000;fill:#666",
+            "wadjust": 20, "vadjust": -10,
+            "description": "A35", "details": "A35 区块标记",
+            "labels": [{ "text": "A35", "vadjust": -15, "valign": "inner",
+            "labelStyle": "font-size:10px;fill:#666" }]
+        },
+        {
+            "id": "a36", "start": 355, "end": 365,
+            "markerStyle": "stroke:#000;fill:#666",
+            "wadjust": 20, "vadjust": -10,
+            "description": "A36", "details": "A36 区块标记",
+            "labels": [{ "text": "A36", "vadjust": -15, "valign": "inner",
+            "labelStyle": "font-size:10px;fill:#666" }]
+        },
+        {
+            "id": "a22", "start": 905, "end": 915,
+            "markerStyle": "stroke:#000;fill:#666",
+            "wadjust": 20, "vadjust": -10,
+            "description": "A22", "details": "A22 区块标记",
+            "labels": [{ "text": "A22", "vadjust": -15, "valign": "inner",
+            "labelStyle": "font-size:10px;fill:#666" }]
+        },
+        {
+            "id": "a14", "start": 170, "end": 180,
+            "markerStyle": "stroke:#000;fill:#666",
+            "wadjust": 20, "vadjust": -10,
+            "description": "A14", "details": "A14 区块标记",
+            "labels": [{ "text": "A14", "vadjust": -15, "valign": "inner",
+            "labelStyle": "font-size:10px;fill:#666" }]
+        }
+        ]
+    }
+  ]
+}

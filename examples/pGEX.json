@@ -1,0 +1,54 @@
+{
+    "name": "pGEX-4T",
+    "sequencelength": 4969,
+    "size": 375,
+    "radius": 125,
+    "width": 8,
+    "trackStyle": { "fill": "#696" },
+    "features": [
+        {
+            "id": "gst",
+            "label": "GST",
+            "start": 232, "end": 849,
+            "vadjust": -10,
+            "labelVadjust": -30,
+            "arrowstartlength": 10, "arrowstartwidth": 5, "arrowstartangle": 3,
+            "style": { "fill": "#f4a460" },
+            "description": "Glutathione S-transferase",
+            "details": "GST 标签，用于亲和纯化融合蛋白"
+        },
+        {
+            "id": "ampR",
+            "label": "AmpR",
+            "start": 3433, "end": 4293,
+            "vadjust": -10,
+            "labelVadjust": -30,
+            "arrowstartlength": 10, "arrowstartwidth": 5, "arrowstartangle": 3,
+            "style": { "fill": "#e05c5c" },
+            "description": "Ampicillin Resistance",
+            "details": "氨苄青霉素抗性基因"
+        },
+        {
+            "id": "ori",
+            "label": "ori",
+            "start": 2000, "end": 2640,
+            "vadjust": -10,
+            "labelVadjust": -25,
+            "arrowstartlength": 10, "arrowstartwidth": 5, "arrowstartangle": 3,
+            "style": { "fill": "#74c476" },
+            "description": "Origin of Replication",
+            "details": "复制起始位点"
+        },
+        {
+            "id": "lacI",
+            "label": "lacI",
+            "start": 4500, "end": 4969,
+            "vadjust": -10,
+            "labelVadjust": -30,
+            "arrowstartlength": 10, "arrowstartwidth": 5, "arrowstartangle": 3,
+            "style": { "fill": "#9e9ac8" },
+            "description": "lac Repressor",
+            "details": "lac 阻遏蛋白，控制 GST 融合蛋白的 IPTG 诱导表达"
+        }
+    ]
+}

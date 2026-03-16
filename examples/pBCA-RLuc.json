@@ -1,0 +1,229 @@
+{
+  "name": "pBCA-RLuc",
+  "sequencelength": 130,
+  "size": 375,
+  "tracks": [
+    {
+      "trackStyle": "fill:none;stroke:none",
+      "radius": 110,
+      "labels": [
+        {
+          "text": "pBCA-RLuc",
+          "labelStyle": "font-weight:700;fill:#369"
+        },
+        {
+          "text": "130 bp",
+          "labelStyle": "font-size:14px;font-weight:300;fill:#036",
+          "vadjust": 20
+        }
+      ],
+      "scales": [
+        {
+          "interval": 5,
+          "style": "stroke:#999",
+          "showlabels": 1,
+          "labelvadjust": 12,
+          "labelstyle": "font-size:8px;font-weight:300;fill:#999"
+        },
+        {
+          "interval": 1,
+          "style": "stroke:#c99",
+          "ticksize": 5,
+          "vadjust": -18
+        }
+      ],
+      "markers": [
+        {
+          "id": "sequence_fwd",
+          "start": 0,
+          "end": 130,
+          "markerStyle": "fill:none;stroke:none",
+          "labels": [
+            {
+              "type": "path",
+              "text": "GGAAAAGGAGGCCAGTGCATCAGAGAGACGCTGAAACTGTATGCGGAAAAGGAGGCCAGTGCATCAGAGAGTCGCAAACAGCTGTGAAGTCGCGTTCTCAAGAATTTGCAGCAGGCTGTGGCCACTTCGCCGGAAAAGGAGGCCAGTGCATCAGAGAGCAAGATCACAGCTGTGAAGTCGCTTC",
+              "halign": "start",
+              "vadjust": 5,
+              "labelStyle": "font-size:8px;font-weight:400;kerning:1.1;fill:#c66"
+            },
+            {
+              "type": "path",
+              "text": "CCTTTTCCTCCGGTCACGTAGTCTCTCTGCGACTTTGACATACGCCTTTTCCTCCGGTCACGTAGTCTCTCAGCGTTTGTCGACACTTCAGCGCAAGAGTTCTTAAACGTCGTCCGACACCGGTGAAGCGGCCTTTTCCTCCGGTCACGTAGTCTCTCGTTCTAGTGTCGACACTTCAGCGAAG",
+              "halign": "start",
+              "vadjust": -10,
+              "labelStyle": "font-size:8px;font-weight:400;fill:#336"
+            }
+          ]
+        },
+        {
+          "id": "region_red",
+          "start": 50,
+          "end": 75,
+          "markerStyle": "stroke:rgba(192,64,64,0.4);fill:rgba(255,192,192,0.4)",
+          "vadjust": -8,
+          "wadjust": 20,
+          "labels": []
+        },
+        {
+          "id": "region_green",
+          "start": 85,
+          "end": 100,
+          "markerStyle": "stroke:rgba(64,192,64,0.4);fill:rgba(192,255,192,0.4)",
+          "vadjust": -8,
+          "wadjust": 20,
+          "labels": []
+        },
+        {
+          "id": "region_purple",
+          "start": 120,
+          "end": 30,
+          "markerStyle": "stroke:rgba(64,64,192,0.4);fill:rgba(192,192,255,0.4)",
+          "vadjust": -8,
+          "wadjust": 20,
+          "labels": []
+        },
+        {
+          "id": "initiating_atg",
+          "start": 120,
+          "end": 30,
+          "markerStyle": "fill:#339",
+          "vadjust": -15,
+          "wadjust": -23,
+          "arrowendlength": 5,
+          "arrowendwidth": 3,
+          "description": "Initiating ATG",
+          "details": "起始密码子 ATG",
+          "labels": [
+            {
+              "type": "path",
+              "text": "Initiating ATG",
+              "valign": "inner",
+              "vadjust": -2,
+              "labelStyle": "font-size:10px;fill:#036"
+            }
+          ]
+        },
+        {
+          "id": "promoter_arrow1",
+          "start": 62,
+          "end": 82,
+          "markerStyle": "fill:#939",
+          "vadjust": -15,
+          "wadjust": -23,
+          "arrowendlength": 5,
+          "arrowendwidth": 3,
+          "labels": [
+            {
+              "text": "82",
+              "halign": "end",
+              "vadjust": -10,
+              "labelStyle": "font-size:10px;fill:#939"
+            }
+          ]
+        },
+        {
+          "id": "promoter_arrow2",
+          "start": 55,
+          "end": 72,
+          "markerStyle": "fill:#939",
+          "vadjust": -20,
+          "wadjust": -23,
+          "arrowstartlength": 5,
+          "arrowstartwidth": 3,
+          "labels": [
+            {
+              "text": "55",
+              "halign": "start",
+              "vadjust": -10,
+              "labelStyle": "font-size:10px;fill:#939"
+            }
+          ]
+        },
+        {
+          "id": "promoter_label",
+          "start": 55,
+          "end": 82,
+          "markerStyle": "stroke:none;fill:none",
+          "vadjust": -20,
+          "wadjust": -23,
+          "labels": [
+            {
+              "text": "Promoter",
+              "vadjust": -15,
+              "labelStyle": "font-size:10px;fill:#939"
+            }
+          ]
+        },
+        {
+          "id": "hindiii_112",
+          "start": 112,
+          "markerStyle": "stroke:rgba(255,0,0,1);stroke-width:2px",
+          "vadjust": -6,
+          "wadjust": 5,
+          "description": "HindIII",
+          "details": "限制性内切酶位点，位置 112",
+          "labels": [
+            {
+              "text": "HindIII",
+              "valign": "inner",
+              "vadjust": -20,
+              "labelStyle": "font-size:10px;fill:#f00"
+            },
+            {
+              "text": "112",
+              "valign": "outer",
+              "vadjust": 15,
+              "labelStyle": "font-size:10px;fill:#f00"
+            }
+          ]
+        },
+        {
+          "id": "hindiii_38",
+          "start": 38,
+          "markerStyle": "stroke:rgba(255,0,0,1);stroke-width:2px",
+          "vadjust": -6,
+          "wadjust": 5,
+          "description": "HindIII",
+          "details": "限制性内切酶位点，位置 38",
+          "labels": [
+            {
+              "text": "HindIII",
+              "valign": "inner",
+              "vadjust": -20,
+              "labelStyle": "font-size:10px;fill:#f00"
+            },
+            {
+              "text": "38",
+              "valign": "outer",
+              "vadjust": 15,
+              "labelStyle": "font-size:10px;fill:#f00"
+            }
+          ]
+        },
+        {
+          "id": "hindiii_87",
+          "start": 87,
+          "markerStyle": "stroke:rgba(255,0,0,1);stroke-width:2px",
+          "vadjust": -6,
+          "wadjust": 5,
+          "description": "HindIII",
+          "details": "限制性内切酶位点，位置 87",
+          "labels": [
+            {
+              "text": "HindIII",
+              "valign": "inner",
+              "vadjust": -20,
+              "labelStyle": "font-size:10px;fill:#f00"
+            },
+            {
+              "text": "87",
+              "valign": "outer",
+              "vadjust": 15,
+              "labelStyle": "font-size:10px;fill:#f00"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

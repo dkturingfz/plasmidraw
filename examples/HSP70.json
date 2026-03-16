@@ -1,0 +1,140 @@
+{
+  "name": "HSP70",
+  "sequencelength": 360,
+  "size": 375,
+  "tracks": [
+    {
+      "trackStyle": "fill:#ccc",
+      "width": 5,
+      "radius": 120,
+      "labels": [],
+      "scales": [],
+      "markers": []
+    },
+    {
+      "trackStyle": "fill:rgba(225,225,225,0.5)",
+      "radius": 110,
+      "labels": [
+        { "text": "HSP70", "labelStyle": "font-size:20px;font-weight:400" },
+        { "text": "360 bp", "labelStyle": "font-size:10px", "vadjust": 20 }
+      ],
+      "scales": [
+        { "interval": 5, "style": "stroke:#999", "direction": "in", "ticksize": 3 },
+        { "interval": 5, "style": "stroke:#999", "ticksize": 3 },
+        { "interval": 30, "style": "stroke:#f00", "direction": "in", "showlabels": 1, "labelstyle": "fill:#999;stroke:none;text-anchor:middle;alignment-baseline:middle;font-size:10px" }
+      ],
+      "markers": [
+        {
+          "id": "hsp70_main", "start": 50, "end": 95,
+          "markerStyle": "fill:rgba(170,0,85,0.9)",
+          "arrowendlength": 4, "arrowstartlength": -4,
+          "description": "HSP70 Gene", "details": "热休克蛋白70编码区",
+          "labels": [{ "type": "path", "text": "HSP70", "labelStyle": "font-size:12px;fill:#fff" }]
+        },
+        {
+          "id": "nf1_main", "start": 120, "end": 190,
+          "markerStyle": "fill:rgba(85,0,170,0.9)",
+          "arrowendlength": 4, "arrowstartlength": -4,
+          "description": "NF1 Promoter", "details": "NF1启动子区域",
+          "labels": [{ "type": "path", "text": "NF1 Promoter", "labelStyle": "font-size:12px;fill:#fff" }]
+        },
+        {
+          "id": "sig_main", "start": 200, "end": 230,
+          "markerStyle": "fill:rgba(0,85,170,0.9)",
+          "arrowendlength": 4, "arrowstartlength": -4,
+          "description": "Signal Peptide", "details": "信号肽序列",
+          "labels": [{ "type": "path", "text": "Sig", "labelStyle": "font-size:12px;fill:#fff" }]
+        },
+        {
+          "id": "cole1_main", "start": 250, "end": 300,
+          "markerStyle": "fill:rgba(85,170,0,0.9)",
+          "arrowendlength": 4, "arrowstartlength": -4,
+          "description": "ColE1 Ori", "details": "ColE1 复制起始位点",
+          "labels": [{ "type": "path", "text": "ColE1 Ori", "labelStyle": "font-size:12px;fill:#fff" }]
+        },
+        {
+          "id": "p3_main", "start": 325, "end": 345,
+          "markerStyle": "fill:rgba(170,85,0,0.9)",
+          "arrowendlength": 4, "arrowstartlength": -4,
+          "description": "P3 Region", "details": "P3区域",
+          "labels": [{ "type": "path", "text": "P3", "labelStyle": "font-size:12px;fill:#fff" }]
+        },
+        {
+          "id": "region_1", "start": 50, "end": 95,
+          "markerStyle": "fill:rgba(255,221,238,0.6)",
+          "wadjust": -5, "vadjust": 25, "labels": []
+        },
+        {
+          "id": "region_2", "start": 120, "end": 190,
+          "markerStyle": "fill:rgba(238,221,255,0.6)",
+          "wadjust": -5, "vadjust": 25, "labels": []
+        },
+        {
+          "id": "region_3", "start": 200, "end": 230,
+          "markerStyle": "fill:rgba(221,238,255,0.6)",
+          "wadjust": -5, "vadjust": 25, "labels": []
+        },
+        {
+          "id": "region_4", "start": 250, "end": 300,
+          "markerStyle": "fill:rgba(238,255,221,0.6)",
+          "wadjust": -5, "vadjust": 25, "labels": []
+        },
+        {
+          "id": "region_5", "start": 325, "end": 345,
+          "markerStyle": "fill:rgba(255,238,221,0.6)",
+          "wadjust": -5, "vadjust": 25, "labels": []
+        },
+        {
+          "id": "b50", "start": 50,
+          "markerStyle": "stroke:rgba(128,64,64,0.8);stroke-dasharray:2,2;stroke-width:2px",
+          "wadjust": 20, "labels": [{ "text": "50", "vadjust": 30, "labelStyle": "font-size:8px;fill:rgb(192,64,64)" }]
+        },
+        {
+          "id": "b95", "start": 95,
+          "markerStyle": "stroke:rgba(128,64,64,0.8);stroke-dasharray:2,2;stroke-width:2px",
+          "wadjust": 20, "labels": [{ "text": "95", "vadjust": 30, "labelStyle": "font-size:8px;fill:rgb(192,64,64)" }]
+        },
+        {
+          "id": "b120", "start": 120,
+          "markerStyle": "stroke:rgba(128,64,128,0.8);stroke-dasharray:2,2;stroke-width:2px",
+          "wadjust": 20, "labels": [{ "text": "120", "vadjust": 30, "labelStyle": "font-size:8px;fill:rgb(192,64,192)" }]
+        },
+        {
+          "id": "b190", "start": 190,
+          "markerStyle": "stroke:rgba(128,64,128,0.8);stroke-dasharray:2,2;stroke-width:2px",
+          "wadjust": 20, "labels": [{ "text": "190", "vadjust": 30, "labelStyle": "font-size:8px;fill:rgb(192,64,192)" }]
+        },
+        {
+          "id": "b200", "start": 200,
+          "markerStyle": "stroke:rgba(64,128,128,0.8);stroke-dasharray:2,2;stroke-width:2px",
+          "wadjust": 20, "labels": [{ "text": "200", "vadjust": 30, "labelStyle": "font-size:8px;fill:rgb(64,192,192)" }]
+        },
+        {
+          "id": "b230", "start": 230,
+          "markerStyle": "stroke:rgba(64,128,128,0.8);stroke-dasharray:2,2;stroke-width:2px",
+          "wadjust": 20, "labels": [{ "text": "230", "vadjust": 35, "labelStyle": "font-size:8px;fill:rgb(64,192,192)" }]
+        },
+        {
+          "id": "b250", "start": 250,
+          "markerStyle": "stroke:rgba(64,128,64,0.8);stroke-dasharray:2,2;stroke-width:2px",
+          "wadjust": 20, "labels": [{ "text": "250", "vadjust": 30, "labelStyle": "font-size:8px;fill:rgb(64,192,64)" }]
+        },
+        {
+          "id": "b300", "start": 300,
+          "markerStyle": "stroke:rgba(64,128,64,0.8);stroke-dasharray:2,2;stroke-width:2px",
+          "wadjust": 20, "labels": [{ "text": "300", "vadjust": 30, "labelStyle": "font-size:8px;fill:rgb(64,192,64)" }]
+        },
+        {
+          "id": "b325", "start": 325,
+          "markerStyle": "stroke:rgba(128,128,64,0.8);stroke-dasharray:2,2;stroke-width:2px",
+          "wadjust": 20, "labels": [{ "text": "325", "vadjust": 30, "labelStyle": "font-size:8px;fill:rgb(153,153,0)" }]
+        },
+        {
+          "id": "b345", "start": 345,
+          "markerStyle": "stroke:rgba(128,128,64,0.8);stroke-dasharray:2,2;stroke-width:2px",
+          "wadjust": 20, "labels": [{ "text": "345", "vadjust": 30, "labelStyle": "font-size:8px;fill:rgb(153,153,0)" }]
+        }
+      ]
+    }
+  ]
+}

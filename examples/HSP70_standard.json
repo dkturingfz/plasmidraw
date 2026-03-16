@@ -1,0 +1,154 @@
+{
+  "name": "HSP70",
+  "sequencelength": 360,
+  "size": 400,
+  "radius": 120,
+  "width": 8,
+  "features": [
+    {
+      "id": "hsp70_gene",
+      "label": "HSP70 Gene",
+      "start": 50,
+      "end": 95,
+      "style": { "fill": "rgba(170,0,85,0.9)" },
+      "arrowstartlength": -4,
+      "arrowendlength": 4,
+      "description": "HSP70 Gene",
+      "details": "热休克蛋白 70 编码区"
+    },
+    {
+      "id": "nf1_promoter",
+      "label": "NF1 Promoter",
+      "start": 120,
+      "end": 190,
+      "style": { "fill": "rgba(85,0,170,0.9)" },
+      "arrowstartlength": -4,
+      "arrowendlength": 4,
+      "description": "NF1 Promoter",
+      "details": "NF1 启动子区域"
+    },
+    {
+      "id": "signal_peptide",
+      "label": "Signal Peptide",
+      "start": 200,
+      "end": 230,
+      "style": { "fill": "rgba(0,85,170,0.9)" },
+      "arrowstartlength": -4,
+      "arrowendlength": 4,
+      "description": "Signal Peptide",
+      "details": "信号肽序列"
+    },
+    {
+      "id": "cole1_ori",
+      "label": "ColE1 Ori",
+      "start": 250,
+      "end": 300,
+      "style": { "fill": "rgba(85,170,0,0.9)" },
+      "arrowstartlength": -4,
+      "arrowendlength": 4,
+      "description": "ColE1 Ori",
+      "details": "ColE1 复制起始位点"
+    },
+    {
+      "id": "p3_region",
+      "label": "P3 Region",
+      "start": 325,
+      "end": 345,
+      "style": { "fill": "rgba(170,85,0,0.9)" },
+      "arrowstartlength": -4,
+      "arrowendlength": 4,
+      "description": "P3 Region",
+      "details": "P3 区域"
+    },
+    {
+      "id": "marker_50",
+      "label": "Markers",
+      "start": 50,
+      "style": { "stroke": "rgba(128,64,64,0.8)", "stroke-dasharray": "2,2", "stroke-width": "2px" },
+      "labelVadjust": 30,
+      "label2": "50",
+      "label2Vadjust": 30
+    },
+    {
+      "id": "marker_95",
+      "label": "Markers",
+      "start": 95,
+      "style": { "stroke": "rgba(128,64,64,0.8)", "stroke-dasharray": "2,2", "stroke-width": "2px" },
+      "labelVadjust": 30,
+      "label2": "95",
+      "label2Vadjust": 30
+    },
+    {
+      "id": "marker_120",
+      "label": "Markers",
+      "start": 120,
+      "style": { "stroke": "rgba(128,64,128,0.8)", "stroke-dasharray": "2,2", "stroke-width": "2px" },
+      "labelVadjust": 30,
+      "label2": "120",
+      "label2Vadjust": 30
+    },
+    {
+      "id": "marker_190",
+      "label": "Markers",
+      "start": 190,
+      "style": { "stroke": "rgba(128,64,128,0.8)", "stroke-dasharray": "2,2", "stroke-width": "2px" },
+      "labelVadjust": 30,
+      "label2": "190",
+      "label2Vadjust": 30
+    },
+    {
+      "id": "marker_200",
+      "label": "Markers",
+      "start": 200,
+      "style": { "stroke": "rgba(64,128,128,0.8)", "stroke-dasharray": "2,2", "stroke-width": "2px" },
+      "labelVadjust": 30,
+      "label2": "200",
+      "label2Vadjust": 30
+    },
+    {
+      "id": "marker_230",
+      "label": "Markers",
+      "start": 230,
+      "style": { "stroke": "rgba(64,128,128,0.8)", "stroke-dasharray": "2,2", "stroke-width": "2px" },
+      "labelVadjust": 35,
+      "label2": "230",
+      "label2Vadjust": 35
+    },
+    {
+      "id": "marker_250",
+      "label": "Markers",
+      "start": 250,
+      "style": { "stroke": "rgba(64,128,64,0.8)", "stroke-dasharray": "2,2", "stroke-width": "2px" },
+      "labelVadjust": 30,
+      "label2": "250",
+      "label2Vadjust": 30
+    },
+    {
+      "id": "marker_300",
+      "label": "Markers",
+      "start": 300,
+      "style": { "stroke": "rgba(64,128,64,0.8)", "stroke-dasharray": "2,2", "stroke-width": "2px" },
+      "labelVadjust": 30,
+      "label2": "300",
+      "label2Vadjust": 30
+    },
+    {
+      "id": "marker_325",
+      "label": "Markers",
+      "start": 325,
+      "style": { "stroke": "rgba(128,128,64,0.8)", "stroke-dasharray": "2,2", "stroke-width": "2px" },
+      "labelVadjust": 30,
+      "label2": "325",
+      "label2Vadjust": 30
+    },
+    {
+      "id": "marker_345",
+      "label": "Markers",
+      "start": 345,
+      "style": { "stroke": "rgba(128,128,64,0.8)", "stroke-dasharray": "2,2", "stroke-width": "2px" },
+      "labelVadjust": 30,
+      "label2": "345",
+      "label2Vadjust": 30
+    }
+  ]
+}
