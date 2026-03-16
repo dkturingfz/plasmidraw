@@ -131,31 +131,28 @@ import {
 
 ### pUC19
 
-![pUC19](examples\pUC19.png)
+![pUC19](./examples/pUC19.png)
 
 
 ### HSP70
 
-![pUC19](examples\HSP70.png)
+![pUC19](./examples/HSP70.png)
 
-### pUC19
-
-![pUC19](examples\pUC19.png)
 
 ### pBCA-RLuc
 
-![pUC19](examples\pBCA-RLuc.png)
+![pUC19](./examples/pBCA-RLuc.png)
 
 ### pBR322
 
-![pUC19](examples\pBR322.png)
+![pUC19](./examples/pBR322.png)
 
 ### pGEX
 
-![pUC19](examples\pGEX.png)
+![pUC19](./examples/pGEX.png)
 ### pPMA43C
 
-![pUC19](examples\pPMA43C.png)
+![pUC19](./examples/pPMA43C.png)
 
 
 
